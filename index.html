@@ -73,6 +73,13 @@
             margin: 0;
         }
 
+        .card:hover {
+            -webkit-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+            box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
         .next {
             font-size: 65px;
         }
@@ -87,8 +94,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#landing"><img src="images/temple.png" width="26.5" height="30"
                 class="d-inline-block align-top" alt="">
-                Noah Klinger
-                <span class="sr-only">(current)</span></a>
+            Noah Klinger
+            <span class="sr-only">(current)</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -103,6 +110,9 @@
                     <a class="nav-link" href="#courses">Courses</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#cards">Cards</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
@@ -110,11 +120,15 @@
     </nav>
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="landing">
         <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Hello, I'm Noah!</h4>
+            <h4 class="display-4 font-weight-bold mx-auto text-center"><span class="badge badge-secondary">
+                    Hello, I'm Noah!</span></h4>
         </div>
         <div class="row mx-auto">
             <h5 class="display-5 mx-auto faded text-center">I'm an Information Science & Technology Student at Temple
                 University.</h5>
+        </div>
+        <div class="row mx-auto">
+            Here are some languages I've played around with
         </div>
         <div class="row my-4">
             <div class="col my-3"><img src="images/java.jpg" class="lang" data-toggle="tooltip" data-placement="top"
@@ -156,7 +170,8 @@
     </div>
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="projects">
         <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Projects</h4>
+            <h4 class="display-4 font-weight-bold mx-auto text-center"><span
+                    class="badge badge-secondary">Projects</span></h4>
         </div>
         <div class="row mx-auto">
             <h5 class="display-5 mx-auto faded text-center mb-4">I've worked on some neat things.</h5>
@@ -175,13 +190,12 @@
             </p>
         </div>
         <div class="row w-100">
-            <h5>Tic-Tac-Toe</h5>
+            <h5>Tic-Tac-Toe Game</h5>
         </div>
         <div class="row w-100 mb-4">
-            <p class="text-justify">Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non ex dapibus
-                finibus. Nulla facilisi. Integer eu libero lorem. Pellentesque eget pretium ligula. Donec finibus nibh
-                sed leo dapibus imperdiet. Fusce cursus eu mi sed porttitor. Aliquam eget suscipit dolor, ac mollis
-                risus. Vestibulum commodo turpis nulla, bibendum varius urna dictum porta. </p>
+            <p class="text-justify">Using Java and the Java AWT package, I was able to develop a fully functional
+                multiplayer tic-tac-toe game. Players can choose their color, whether they want to be an X or O, and
+                track players' wins and games played. </p>
         </div>
 
         <div class="row mt-5 next">
@@ -191,7 +205,8 @@
     </div>
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="courses">
         <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Courses</h4>
+            <h4 class="display-4 font-weight-bold mx-auto text-center"><span
+                    class="badge badge-secondary">Courses</span></h4>
         </div>
         <div class="row mx-auto mb-4">
             <h5 class="display-5 mx-auto faded text-center">Not as tasty as a main course, but close.</h5>
@@ -220,6 +235,49 @@
                 <h5>User Experience Design</h5>
             </div>
         </div>
+        <div class="row mt-5 next">
+            <a href="#cards" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                    title="cards"></i></a>
+        </div>
+        <div class="container landing d-flex justify-content-center flex-column align-items-center" id="cards">
+            <div class="row mx-auto">
+                <h4 class="display-4 font-weight-bold mx-auto text-center"><span
+                        class="badge badge-secondary">Cards</span></h4>
+            </div>
+            <div class="row mx-auto mb-4">
+                <h5 class="display-5 mx-auto faded text-center">The new section of the page.</h5>
+            </div>
+            <div class="card-deck">
+                <div class="card w-100 hover-shadow">
+                    <img class="card-img-top" src="images/monopoly game.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Monopoly Game Example</h5>
+                        <p class="card-text">This is what the monopoly game board looks like.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="images/Output/someone wins.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Tic-tac-toe win</h5>
+                        <p class="card-text">This is what the tic-tac-toe game looks like when a player has won.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="images/Output/draw.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Tic-tac-toe draw</h5>
+                        <p class="card-text">In this case, the program is able to determine that there is no winner, and
+                            the outcome is a draw. Simply clicking on the window will allow
+                            another game to be played. The players will also be prompted if they want to change the
+                            color or not
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
         <div class="row mt-5 next">
             <a href="#contact" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
                     title="Contact"></i></a>
